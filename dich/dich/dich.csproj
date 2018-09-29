@@ -42,12 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cinema.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="Employers.cs" />
-    <Compile Include="Films.cs" />
-    <Compile Include="Food.cs" />
-    <Compile Include="Halls.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
