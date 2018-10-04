@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dich
 {
-    class Halls:Cinema
+    class Halls
     {
         public int NumberOfHall { get; set; }
         public bool TypeOfHall { get; set; }

@@ -1,7 +1,15 @@
 C:\Users\Dell\Cinema\dich\dich\bin\Debug\dich.exe.config
 C:\Users\Dell\Cinema\dich\dich\bin\Debug\dich.exe
 C:\Users\Dell\Cinema\dich\dich\bin\Debug\dich.pdb
-C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.csprojResolveAssemblyReference.cache
 C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.exe
 C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.pdb
+C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Cinema\dich\dich\bin\Debug\EntityFramework.dll
+C:\Users\Dell\Cinema\dich\dich\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dell\Cinema\dich\dich\bin\Debug\EntityFramework.xml
+C:\Users\Dell\Cinema\dich\dich\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.csproj.CopyComplete
+C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.Migrations.InitialCreate.resources
+C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.csproj.GenerateResource.cache
+C:\Users\Dell\Cinema\dich\dich\obj\Debug\dich.Migrations._1.resources
