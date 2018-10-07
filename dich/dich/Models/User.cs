@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dich.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace dich.DataBase
 
         public UserProfile Profile { get; set; }
 
+       
 
     }
 }

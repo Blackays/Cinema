@@ -57,7 +57,7 @@
     <Compile Include="Films.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Halls.cs" />
-    <Compile Include="Methods\Manager.cs" />
+    <Compile Include="Methods\UserRepository1.cs" />
     <Compile Include="Migrations\201810041417411_InitialCreate.cs" />
     <Compile Include="Migrations\201810041417411_InitialCreate.Designer.cs">
       <DependentUpon>201810041417411_InitialCreate.cs</DependentUpon>

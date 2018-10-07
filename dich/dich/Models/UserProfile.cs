@@ -21,5 +21,8 @@ namespace dich.DataBase
         public int UserAge { get; set; }
 
         public User User { get; set; }
+
+
+        
     }
 }

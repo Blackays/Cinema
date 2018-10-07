@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace dich.Methods
 {
-    class Manager12:Customer
+    class UserRepository
     {
-  
-
-
     }
 }
