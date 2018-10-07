@@ -33,7 +33,7 @@ namespace dich
                         user3.OnScreen();
                         goto mitka;
                     case 2:
-                        user3.SignIn();
+                        user3.SignUp();
                         goto mitka;
                     case 3:
                         UsersId = user3.LogIn();
