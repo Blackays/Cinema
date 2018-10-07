@@ -1,87 +1,79 @@
-﻿using System;
+﻿using dich.DataBase;
+using dich.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using dich.Methods;
 
 namespace dich
 {
-    class Program : Customer
+    public class Program
     {
         static void Main(string[] args)
         {
-            bool b = false , j=false;          
-            Customer Just = new Customer();
-            Just.Creation();
-            mitka:
-            Console.WriteLine("Доброго дня!\n");
-            Console.WriteLine("1-Ввiiйти в систему\n");
-            Console.WriteLine("2-Зареєструватись\n");
-            Console.WriteLine("3-Ввiйти в систему вiд iменi адмiнiстратора");
-            if (b != false)
+
+            using (UserContext context = new UserContext())
             {
-                Console.ReadLine(); 
-            }
-            b = true;
-            string k = Console.ReadLine();
-            switch (k)
-            {
-                case "1":
-                    int nd = Just.LogIn();
-                    if (nd == 0)
-                    {
-                        Console.WriteLine("Попробуйте знову!");
+
+                User user1 = new User();
+                UserProfile user2 = new UserProfile();
+                UserRepository1 user3 = new UserRepository1();
+                int k, UsersId = 0;
+                mitka:
+                Console.WriteLine("1-Вивести всiх користувачiв на екран");
+                Console.WriteLine("2-Створити нового користувача");
+                Console.WriteLine("3-Увiйти в систему");
+
+                k = Convert.ToInt32(Console.ReadLine());
+                switch (k)
+                {
+                    case 1:
+                        user3.OnScreen();
                         goto mitka;
-                    }
-                    else
-                    {
+                    case 2:
+                        user3.SignIn();
+                        goto mitka;
+                    case 3:
+                        UsersId = user3.LogIn();
+                        if (UsersId != 0)
+                            goto mitka1;
+                        else if (UsersId == 0)
+                            goto mitka;
+                        goto mitka;
+                }
+
+                mitka1:
+                Console.Clear();
+                Console.WriteLine("Доброго дня!\n");
+                Console.WriteLine("1-Профiль\n");
+                Console.WriteLine("2-Фiльми цього тижня\n");
+                Console.WriteLine("3-Фiльми сьогоднi\n");
+                Console.WriteLine("4-Пошук фiльмiв за годинною\n");
+                Console.WriteLine("5-Пошук фiльмiв по назвi\n");
+                Console.WriteLine("6-\n");
+                k = Convert.ToInt32(Console.ReadLine());
+
+                switch (k)
+                {
+                    case 1:
+                        user3.EditProfile(UsersId);
                         goto mitka1;
-                    }
+                    case 2:
 
-                case "2":
-                    Just.SignIn();
-                    goto mitka;
+                        break;
+                    case 3:
 
-                case "3":
-                    goto mitka1;
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+
+                        break;
+                    case 6:
+                        goto mitka;
+                }
             }
-            mitka1:
-            Console.WriteLine("Доброго дня!\n");
-            Console.WriteLine("1-Профiль\n");
-            Console.WriteLine("2-Фiльми цього тижня\n");
-            Console.WriteLine("3-Фiльми сьогоднi\n");
-            Console.WriteLine("4-Пошук фiльмiв за годинною\n");
-            Console.WriteLine("5-Пошук фiльмiв по назвi\n");
-            Console.WriteLine("6-\n");
-            //if (j != false)
-            //{
-            //    Console.ReadLine();
-            //}
-            //j = true;
-            k = Console.ReadLine();
-            
-            switch (k)
-            {
-                case "1":
-                    Just.Profile();
-                    goto mitka1;
-                case "2":
-                    
-                case "3":
-
-                case "4":
-
-                case "5":
-
-                case "6":
-
-                    break;
-                   
-            }
-
-            return;
-        }
-    }
-}
+return;}}}

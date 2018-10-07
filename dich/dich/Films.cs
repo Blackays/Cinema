@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dich
 {
-    class Films : Halls
+    class Films 
     {
         Films[] film = new Films[10];
         //film[10] = new Films();
