@@ -12,7 +12,7 @@ namespace dich.Methods
     public class UserRepository1
     {
         
-        public void SignIn()
+        public void SignUp()
         {
             using (UserContext context = new UserContext())
             {
